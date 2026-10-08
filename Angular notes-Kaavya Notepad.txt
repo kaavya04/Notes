@@ -1,0 +1,264 @@
+Life Cycle method
+
+mounting,updating,unmonting
+
+based on brower component cange---( )
+[ ]-----property binding
+{ }----
+[{ }]-----two way binding
+
+
+component  --------- which template could be display or not 
+structrual directive ----new element we create or delete-------based on condition component will be display------ngserve  
+attribute----- ngClass ngStyle --------change a appreance
+
+
+Lifecyle
+onChange----updating
+onInit ----------- mountedd-------- it will execute only one time
+onDestroy-------unmount
+AfterViewInt-----------after printing html code it will display later, balance 3 are execute before the html load
+
+these all are inteface so we use implements 
+for a interface we have inbuild method------
+
+default return type is----void,undefined
+
+
+lifecycle
+update -------------onchange
+create------------onInit
+change----------onAfterView
+destroy------ onDestroy
+
+
+we only want a logic that time we use service
+ng g s servicename
+
+
+
+
+
+
+Interview Question
+1.what is AngularJS?
+     Angular is a js framework whick is used to create single page application.
+
+2.Features of angular?
+    - it is component based architech
+   -it has httpClient for api request
+   -it supports 2 way dataBinding
+   -it supports services by using dependency injection 
+  -it supports routing for navigation between components
+   -it has own directives
+  -it has own form management tools like template driven,reactive forms.
+   -it has own lifecycle method
+  -it has input and output decorators for component communication
+  -it has own testing tool -----white box tesing ,black box testing
+
+
+library                                                                                                             framework
+it is a reusable collection of code                                         it is application which has reusable collecction
+which can be written in function                                           of code with instruction and rules.it is collection of library.
+class or collection of modules.
+
+here code flow will be take care by developer.                 here code flow will be give by framwork.
+
+eg:react,jquery                                                                            eg:angular ,express
+
+
+
+spa                                                                                                          mpa
+server will repond in json formate                             server will respond in html,css,ja
+
+one main html file will be there                                   here multiple html file will be there for every webpage
+
+intial downloading time more                                    initial downloding time is less
+
+browser will not reload while                                          browser will be reloaded while navigating different page
+navigating different pages or components                  
+
+
+
+                    React                                                                                                   Angular
+here we can use both ts and js                                                        support only typescript
+
+component can be createdd by classs                                     support only class based component
+as well as function
+
+it doesn't have own cli                                                                   it has own cli
+
+it supports one way data binding                                             it supports two way data binding
+
+we need to install react router for routing                         routing is inbuild in angular
+
+it supports only fetch for apo communication                 it has own http client for api communication
+
+
+what is ts?
+       it is a superset of js.it will provide type safety and it is compiled language.
+       
+   js--interpretedd language---------executed line by line syncronizedd ----weekly type language -----a=1  a="abc"
+   ts--compiler language    ---------------------read the whole code and executedd----strongly type language ------a=1   again we cnnot change the datatype a="abc" is not possible
+    
+what is component?
+         it is piece of reusable code which is used to createe specific part of the ui.
+         in angular components are created by using class with a component decorator,decotator used to add extra features to class.
+         decorator is a special features in class
+         @component ,@Input ,@OutPut
+
+what data binding?
+       binding the data between class and template.
+1-----------interpolation -----{{ }} ----inside html elements displaying content --here data will flow from class to template
+2----------property binding------[ ]----inside html attribute -----here data will flow from template to class
+3---------event binding--------( )------inside html attribute -----here data will flow from template to class
+4--------two way binding-------[(ngModel)]-----inside html attribute-------here data will flow both way
+
+
+directives
+      it is used to control behavior,layout,apprence of html element or component
+1---------component--------it has own template(html)----------that only will display on the screen --------@component
+2---------structural-------it is used to control content and layout of the element----------eg:  *ngIf ,*ngFor,*ngSwitch,@if ,@for,@switch
+3-------attribute------it will control appreance and style of an element---------ngStyle,ngClass
+
+
+service:
+   it is a typescript class which is used to share logic like api calls,business logic with help of injectable decorator.
+   to add service to component we need dependency injection.
+
+dependency injection
+     it is a design pattern which is used to add service to component without creating any extra object or class.
+
+   
+pipes and async pipes:
+    it is used to change formate of data without affecting the original data
+
+pipes -----------eg:uppercasem,lowercase,title,currency,data
+async pipes:-----------it is used to formate the asynchronus data like promise and observable.
+
+
+promise                                                                    observable
+it will always return one data                               it can return multiple data
+non cancellable                                                       we can cancle by using unsubscripe( )
+async ,await,then,catch                                         subscripe to handle the observable
+it will not supports Rxjs methods                    supports rxjs methods like filters ,map
+
+Rxjs 
+       Reactive extension of javascript .it is library .it is used to handle asychronus data andd stream of values by using observables.
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
